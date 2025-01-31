@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat and Bookings</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Tabs -->
+      <div class="tabs">
+        <button id="chats-btn" class="tab-button active">Chats</button>
+        <button id="appointments-btn" class="tab-button">Bookings</button>
+      </div>
+
+      <!-- Chat Section -->
+      <div id="chat-section" class="section active">
+        <div id="chat-box" class="chat-box"></div>
+        <div id="typing-animation" class="typing-animation">
+          Bot is typing...
+        </div>
+        <div class="input-container">
+          <input type="text" id="user-input" placeholder="Type a message..." />
+          <button id="send-btn">Send</button>
+        </div>
+      </div>
+
+      <!-- Appointments Section -->
+      <div id="appointments-section" class="section">
+        <ul id="appointments-list"></ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
