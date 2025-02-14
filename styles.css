@@ -1,5 +1,4 @@
-/* General Styles */
-body {
+/* body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,7 +14,6 @@ body {
   overflow: hidden;
 }
 
-/* Tabs */
 .tabs {
   display: flex;
   background-color: #075e54;
@@ -40,7 +38,6 @@ body {
   background-color: #128c7e;
 }
 
-/* Sections */
 .section {
   display: none;
   padding: 20px;
@@ -50,7 +47,6 @@ body {
   display: block;
 }
 
-/* Chat Box */
 .chat-box {
   height: 300px;
   overflow-y: auto;
@@ -81,7 +77,6 @@ body {
   margin-right: auto;
 }
 
-/* Typing Animation */
 .typing-animation {
   display: none;
   font-style: italic;
@@ -89,7 +84,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Input Container */
 .input-container {
   display: flex;
   gap: 10px;
@@ -119,7 +113,6 @@ body {
   background-color: #075e54;
 }
 
-/* Appointments List */
 #appointments-list {
   list-style-type: none;
   padding: 0;
@@ -135,4 +128,127 @@ body {
 
 #appointments-list li:last-child {
   border-bottom: none;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ece5dd;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  background-color: #075e54;
+}
+
+.tab-button {
+  flex: 1;
+  padding: 15px;
+  border: none;
+  background: none;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-button.active,
+.tab-button:hover {
+  background-color: #128c7e;
+}
+
+.section {
+  display: none;
+  padding: 20px;
+}
+
+.section.active {
+  display: block;
+}
+
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #e5ddd5;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 70%;
+}
+
+.user-message {
+  background-color: #dcf8c6;
+  margin-left: auto;
+}
+
+.bot-message {
+  background-color: #fff;
+  margin-right: auto;
+}
+
+.typing-animation {
+  display: none;
+  font-style: italic;
+  color: #666;
+}
+
+.input-container {
+  display: flex;
+  gap: 10px;
+  background-color: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+}
+
+#send-btn {
+  padding: 10px;
+  background-color: #128c7e;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#appointments-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#appointments-table th,
+#appointments-table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#appointments-table th {
+  cursor: pointer;
+  background-color: #128c7e;
+  color: white;
+}
+
+#appointments-table tr:hover {
+  background-color: #f1f1f1;
 }

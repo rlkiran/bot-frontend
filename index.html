@@ -28,10 +28,20 @@
 
       <!-- Appointments Section -->
       <div id="appointments-section" class="section">
-        <ul id="appointments-list"></ul>
+        <table id="appointments-table">
+          <thead>
+            <tr>
+              <th data-column="name">Name</th>
+              <th data-column="phone">Phone</th>
+              <th data-column="service">Service</th>
+              <th data-column="date">Date/Time</th>
+            </tr>
+          </thead>
+          <tbody id="appointments-list"></tbody>
+        </table>
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
